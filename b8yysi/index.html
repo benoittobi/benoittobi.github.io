@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b8yy私人影院-私人观影指南与精选影单推荐</title>
+  <meta name="description" content="b8yy私人影院聚焦私密观影体验，提供私人影院搭建建议、精选片单、观影设备与空间设计参考，帮助你打造属于自己的沉浸式观影空间。">
+  <meta name="keywords" content="b8yy私人影院,私人影院,家庭影院,观影空间,影音设备,沉浸式观影,私人影单">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #0f0f12;
+      color: #e8e6e3;
+      line-height: 1.6;
+    }
+    .wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* header */
+    .site-header {
+      border-bottom: 1px solid #26262b;
+      padding: 18px 0;
+      background: #141418;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: #c2a05a;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #141418;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -1px;
+    }
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #e8e6e3;
+    }
+    .logo-text span {
+      color: #c2a05a;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .main-nav a {
+      color: #b8b6b2;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .main-nav a:hover {
+      color: #e8e6e3;
+    }
+    /* hero */
+    .hero {
+      background: linear-gradient(135deg, #101014 0%, #1b1b22 100%);
+      padding: 60px 0 50px;
+      border-bottom: 1px solid #2b2b31;
+    }
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .hero-copy {
+      flex: 1 1 320px;
+    }
+    .hero-copy h1 {
+      font-size: 2.9rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 24px;
+      color: #f0ede8;
+      letter-spacing: -0.5px;
+    }
+    .hero-copy h1 i {
+      color: #c2a05a;
+      font-style: normal;
+      font-weight: 500;
+    }
+    .hero-copy p {
+      font-size: 1.1rem;
+      color: #b0afb5;
+      max-width: 600px;
+      margin-bottom: 28px;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 40px;
+      background: #c2a05a;
+      color: #141418;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: none;
+      cursor: default;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #666;
+      color: #ddd;
+    }
+    .btn-outline:hover {
+      border-color: #c2a05a;
+      color: #c2a05a;
+    }
+    .hero-visual {
+      flex: 1 1 280px;
+      background: #1e1e25;
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+      border: 1px solid #2c2c34;
+    }
+    .visual-card {
+      background: #22222a;
+      border-radius: 16px;
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .visual-card .top-meta {
+      display: flex;
+      justify-content: space-between;
+      color: #c2a05a;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .visual-card h3 {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    .visual-card .progress {
+      background: #111;
+      height: 6px;
+      border-radius: 10px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .progress span {
+      display: block;
+      height: 100%;
+      width: 72%;
+      background: #c2a05a;
+    }
+    .visual-card .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .tag {
+      background: #2c2c35;
+      padding: 4px 12px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      color: #bbb;
+    }
+    /* section */
+    .section {
+      padding: 50px 0;
+      border-bottom: 1px solid #24242b;
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .section-header h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #f0ede8;
+    }
+    .section-header .link-more {
+      color: #c2a05a;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: #1a1a20;
+      border-radius: 18px;
+      padding: 24px 20px;
+      border: 1px solid #2a2a32;
+      transition: transform 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+    }
+    .feature-card .icon {
+      color: #c2a05a;
+      font-size: 2.2rem;
+      margin-bottom: 18px;
+    }
+    .feature-card h3 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: #e0dedb;
+    }
+    .feature-card p {
+      color: #a5a4ab;
+      font-size: 0.95rem;
+    }
+    .film-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .film-item {
+      background: #191920;
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid #24242b;
+    }
+    .film-item .poster {
+      background: #2a2a33;
+      height: 160px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5c5c68;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+    .film-item h4 {
+      font-weight: 500;
+      color: #d5d2ce;
+      margin-bottom: 6px;
+    }
+    .film-item .meta {
+      color: #7c7c88;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .tips-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .tip-row {
+      display: flex;
+      gap: 18px;
+      background: #17171d;
+      padding: 20px 22px;
+      border-radius: 20px;
+      border-left: 4px solid #c2a05a;
+    }
+    .tip-num {
+      color: #c2a05a;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .tip-content h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #e0dedb;
+    }
+    .tip-content p {
+      color: #a3a2a9;
+    }
+    .quote-area {
+      background: #121218;
+      padding: 30px 0;
+      border-bottom: 1px solid #2b2b31;
+    }
+    .quote-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .quote-item {
+      flex: 1 1 280px;
+      background: #1d1d24;
+      padding: 28px;
+      border-radius: 24px;
+      border: 1px solid #30303a;
+    }
+    .quote-item p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 18px;
+    }
+    .quote-author {
+      color: #c2a05a;
+      font-weight: 500;
+    }
+    /* faq */
+    .faq-list {
+      max-width: 900px;
+    }
+    .faq-item {
+      background: #1a1a21;
+      border-radius: 14px;
+      padding: 18px 24px;
+      margin-bottom: 12px;
+      border: 1px solid #2d2d35;
+    }
+    .faq-item h3 {
+      color: #e0dedb;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      color: #a6a5ad;
+    }
+    /* footer */
+    .site-footer {
+      background: #0b0b0e;
+      padding: 40px 0 30px;
+      color: #777;
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-col p {
+      max-width: 300px;
+      font-size: 0.9rem;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li {
+      margin-bottom: 8px;
+    }
+    .footer-col a {
+      color: #888;
+      text-decoration: none;
+    }
+    .footer-col a:hover {
+      color: #c2a05a;
+    }
+    .copyright {
+      margin-top: 30px;
+      border-top: 1px solid #1f1f25;
+      padding-top: 20px;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    @media (max-width: 800px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .hero-copy h1 {
+        font-size: 2.2rem;
+      }
+      .section-header {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+    @media (max-width: 480px) {
+      .main-nav ul {
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <header class="site-header">
+    <div class="wrapper header-inner">
+      <div class="logo-area">
+        <div class="logo-icon">B</div>
+        <div class="logo-text">b8yy<span>私人影院</span></div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">影单</a></li>
+          <li><a href="#">设备</a></li>
+          <li><a href="#">空间设计</a></li>
+          <li><a href="#">灵感</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section class="hero">
+      <div class="wrapper hero-grid">
+        <div class="hero-copy">
+          <h1>沉浸式观影，<br>从 <i>b8yy私人影院</i> 开始</h1>
+          <p>无论你是想打造专属影音室，还是寻找静谧的观影片单，这里提供从设备、空间到内容的一体化私人影院灵感。</p>
+          <div class="hero-cta">
+            <span class="btn">探索观影方案</span>
+            <span class="btn btn-outline">精选影单</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="top-meta"><span>今晚推荐</span><span>4K 杜比视界</span></div>
+            <h3>沙丘 · 导演剪辑版</h3>
+            <div class="progress"><span></span></div>
+            <div class="tags">
+              <span class="tag">沉浸</span>
+              <span class="tag">IMAX</span>
+              <span class="tag">太空史诗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核心栏目：私人影院怎么搭 -->
+    <section class="section">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>私人影院 · 搭建核心</h2>
+          <a href="#" class="link-more">查看全部指南 →</a>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon">📽️</div>
+            <h3>显示设备</h3>
+            <p>从高端激光投影到OLED电视，根据空间亮度与观影距离选择最适合的方案。</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🔊</div>
+            <h3>音频系统</h3>
+            <p>5.1.2 全景声或实体多声道，精准还原电影原声细节，营造包围感。</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🛋️</div>
+            <h3>座位与光线</h3>
+            <p>人体工学座椅与可调氛围光，减少干扰，保持长时间观影舒适。</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🎞️</div>
+            <h3>片源管理</h3>
+            <p>本地NAS与流媒体结合，建立自己的4K电影库，随时点播。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 本周私人影单 -->
+    <section class="section">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>本周私人影单 · 静谧之夜</h2>
+          <a href="#" class="link-more">编辑精选 →</a>
+        </div>
+        <div class="film-list">
+          <div class="film-item">
+            <div class="poster">🎬 银翼杀手2049</div>
+            <h4>银翼杀手2049</h4>
+            <div class="meta"><span>科幻 · 2017</span><span>8.3</span></div>
+          </div>
+          <div class="film-item">
+            <div class="poster">🎬 布达佩斯大饭店</div>
+            <h4>布达佩斯大饭店</h4>
+            <div class="meta"><span>剧情 · 2014</span><span>8.9</span></div>
+          </div>
+          <div class="film-item">
+            <div class="poster">🎬 帕丁顿熊2</div>
+            <h4>帕丁顿熊2</h4>
+            <div class="meta"><span>家庭 · 2017</span><span>8.0</span></div>
+          </div>
+          <div class="film-item">
+            <div class="poster">🎬 燃烧女子的肖像</div>
+            <h4>燃烧女子的肖像</h4>
+            <div class="meta"><span>爱情 · 2019</span><span>8.7</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 空间与体验 tips -->
+    <section class="section" style="background:#131318;">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>私人影院体验指南</h2>
+        </div>
+        <div class="tips-list">
+          <div class="tip-row">
+            <div class="tip-num">01</div>
+            <div class="tip-content">
+              <h3>遮光与声学处理</h3>
+              <p>厚重窗帘与吸音板能显著提升对比度与声音清晰度，是性价比最高的改造。</p>
+            </div>
+          </div>
+          <div class="tip-row">
+            <div class="tip-num">02</div>
+            <div class="tip-content">
+              <h3>投影尺寸计算</h3>
+              <p>根据座位距离（英尺）除以0.84可得到推荐画面宽度，避免过大产生眩晕。</p>
+            </div>
+          </div>
+          <div class="tip-row">
+            <div class="tip-num">03</div>
+            <div class="tip-content">
+              <h3>片源收藏与整理</h3>
+              <p>使用海报墙软件管理本地影片，自动匹配简介与封面，形成个人影库。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 观影灵感 quotes -->
+    <section class="quote-area">
+      <div class="wrapper quote-grid">
+        <div class="quote-item">
+          <p>“电影延长三倍生命，而私人影院让这三倍完全属于自己。”</p>
+          <div class="quote-author">— 影迷手记</div>
+        </div>
+        <div class="quote-item">
+          <p>“好的影音空间，会让你忘记设备的存在，只记得故事。”</p>
+          <div class="quote-author">— 声学设计师</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="wrapper">
+        <div class="section-header">
+          <h2>私人影院常见问题</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>客厅可以改造成私人影院吗？</h3>
+            <p>完全可以。使用抗光幕布、移动电视支架与遮光窗帘，客厅也能实现不错的效果，不受限于独立房间。</p>
+          </div>
+          <div class="faq-item">
+            <h3>预算有限，优先升级哪部分？</h3>
+            <p>建议先从显示与遮光入手，大屏和全黑环境带来的观感提升最明显，音频可后续逐步增加。</p>
+          </div>
+          <div class="faq-item">
+            <h3>b8yy私人影院提供安装服务吗？</h3>
+            <p>我们主要分享专业方案、设备搭配与片源管理思路，具体安装可咨询当地认证影音工程师。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 style="color:#c2a05a; margin-bottom:16px;">b8yy私人影院</h3>
+          <p>专注私人观影文化与空间设计，提供专业、可靠的影院灵感库。</p>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><a href="#">观影指南</a></li>
+            <li><a href="#">设备评测</a></li>
+            <li><a href="#">空间案例</a></li>
+            <li><a href="#">影单推荐</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系合作</a></li>
+            <li><a href="#">隐私须知</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 b8yy私人影院 · 只为沉浸观影
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
